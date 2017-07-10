@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Music Library</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<h2>
+		<marquee direction="left" scrolldelay = "200">
+			My Music Library
+		</marquee></h2>
+		<p><img src="1.jpg" class="pic" alt="im1"><img src="5.jpg" class="pic" alt="im5"><img src="3.jpg" class="pic" alt="im3"><img src="7.jpg" class="pic" alt="im7"><img src="2.jpg" class="pic" alt="im2"><img src="6.jpeg" class="pic" alt="im6">
+		</p>
+		<div class="p">
+
+			<a href="All_Favourite_Songs.php" class="btn" id="">View Songs</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Insert_Favourite_Songs_Form.html" class="btn" id="">Add Songs</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Insert_Favourite_Songs_Form.html" class="btn" id="">Search Songs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Insert_Favourite_Songs_Form.html" class="btn" id="">Delete Songs</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Insert_Favourite_Songs_Form.html" class="btn" id="">Login</a>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>
+				This website contains a collection of Music
+			</p>
+		</div>
+		<br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		</div>
+
+		<form action="Insert_Favourite_Songs.php" method="post">
+
+			<table border=0>
+				<tr>
+					<td>Song Title</td>
+					<td>
+					<input type=text name=songtitle maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Singer's First Name</td>
+					<td>
+					<input type=text name=singerfn maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Singer's Middle Name</td>
+					<td>
+					<input type=text name=singermn maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Singer's Last Name</td>
+					<td>
+					<input type=text name=singerln maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Singer's Gender</td>
+					<td>
+					<input type=text name=singergndr maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Singer's DOB</td>
+					<td>
+					<input type=text name=singerdob maxlength=30 size=30>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Release Year</td>
+					<td>
+					<input type=text name=ryear maxlength=4 size=4>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Genre</td>
+					<td>
+					<input type=text name=genre maxlength=20 size=20>
+					<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type= submit value = "Update Database">
+					</td>
+					<td>
+					<input type = submit value = "Delete Value">
+					</td>
+				</tr>
+			</table>
+		</form>
+
+		<script language = "JavaScript">
+			var now = new Date();
+			var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+			var monNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+			document.write("<h3> Today : " + dayNames[now.getDay()] + " " + monNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear() + "</h3>");
+		</script>
+
+		<div class="container">
+			<div class="div12">
+				<form class = "form-signin" role = "form" action = "/log.php "method = "post">
+					<h4 style="Text-align: center">Admin Login</h4>
+					<h4 class = "form-signin-heading"></h4>
+					<lable>
+						Username:
+					</lable>
+					<br>
+					<br>
+					<input type = "text" class = "form-control"
+					name = "username" placeholder = "username"
+					required autofocus>
+					<br>
+					<br>
+					<label>Password:</label>
+					<br>
+					<input type = "password" class = "form-control"
+					name = "password" placeholder = "password" required>
+					<br>
+					<br>
+					<button  type = "submit"
+					name = "login">
+						Login
+					</button>
+				</form>
+			</div>
+		</div>
+		<p><img src="3.jpg" class="pic" alt="im3"><img src="7.jpg" class="pic" alt="im7"><img src="4.jpg" class="pic" alt="im4"><img src="8.jpg" class="pic" alt="im8"><img src="3.jpg" class="pic" alt="im3"><img src="7.jpg" class="pic" alt="im7">
+		</p>
+		<div class="footer">
+			<p>
+				Website created by Arpan Kandel for CSCI 380 Final Project.
+			</p>
+			<p>
+				Texas A&M University at Commerce | professor: Daniel Creider
+			</p>
+			<p>
+				Contact Student at:<a href="mailto:akandel@leomail.tamuc.edy">E-mail Arpan</a>.
+			</p>
+		</div>
+
+	</body>
+</html>
